@@ -90,7 +90,7 @@ public class Calculater extends JFrame implements ActionListener{
         }
         //container.add(jPanel);
         //container.add(jPanel1);
-        JButton clearbutton = new JButton("AC");
+        JButton clearbutton = new JButton("CE");
         Font clearfont = new Font("微软雅黑",Font.BOLD,30);
         clearbutton.setFont(clearfont);
         clearbutton.addActionListener(this);
@@ -476,3 +476,5 @@ public class Calculater extends JFrame implements ActionListener{
         }*/
     }
 }
+
+
