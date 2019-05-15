@@ -10,9 +10,12 @@ package Task1_2;
 public class Car007 implements Common{
     int A,B,C;
     float speed;
+    public Car007(int a , int b , int c){
+        A=a;B=b;C=c;
+        speed = A*B/C;
+    }
     @Override
     public float getSpeed() {
-        speed = A*B/C;
         return speed;
     }
 

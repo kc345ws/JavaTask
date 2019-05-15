@@ -25,9 +25,9 @@ public class Task1_1 {
 
 
 class Narnum{
-    private int number;
-    private int []everynum;
-    int count;
+    private int number;//要判断是否是水仙花数的数字
+    private int []everynum;//数字的每一位
+    int count;//数字位数
 
     public Narnum(int num){
         number = num;
@@ -37,7 +37,7 @@ class Narnum{
         CheckNatnum();
     }
 
-    public int GetCount(){
+    public int GetCount(){//获得数字总共有几位
         int Temp = number;
         count = 0;
         while(Temp != 0){
@@ -51,7 +51,7 @@ class Narnum{
         everynum = new int[count];
     }
 
-    public void Geteverynum(){
+    public void Geteverynum(){//获得每一位的数字分别是什么
         int Temp = number;
         int Temp01 = number;
         for(int i = 0 ; i < count ; i++){
@@ -62,7 +62,7 @@ class Narnum{
         }
     }
 
-    public boolean CheckNatnum(){
+    public boolean CheckNatnum(){//判断是否是水仙花数
         int Temp = 0;
         for(int i = 0 ; i < count ; i++){
             Temp += everynum[i]*everynum[i]*everynum[i];
