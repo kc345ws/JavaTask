@@ -89,7 +89,7 @@ class GetClientMessageThread extends Server implements Runnable {
         while (true) {
             InputStream inFromserver = server.getInputStream();
             DataInputStream in = new DataInputStream(inFromserver);
-            System.out.println("服务器的回复：" + in.readUTF());
+            System.out.println("客户端的回复：" + in.readUTF());
         }
     }
 }
